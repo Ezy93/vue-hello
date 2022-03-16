@@ -9,7 +9,7 @@ Aggiungere alla pagina un’immagine, presa anch’essa da un data, magari volen
 const app = new Vue({
     el: '#app',
     data: {
-        message: 'hello Vue!',
+        message: 'hello Alice!',
         image: 'https://i1.sndcdn.com/artworks-000142988650-icdihe-t500x500.jpg',
         imageUser: "",
     }
