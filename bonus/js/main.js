@@ -12,5 +12,11 @@ const app = new Vue({
         message: 'hello Alice!',
         image: 'https://i1.sndcdn.com/artworks-000142988650-icdihe-t500x500.jpg',
         imageUser: "",
+    },
+    methods: {
+        remove: function(){
+            document.getElementById("imageUrl").value = "";
+            document.getElementById("viewImage").classList.remove("d-none")
+        }
     }
 })

@@ -38,11 +38,12 @@
             <div class="col-8 offset-2 p-3 d-flex justify-content-evenly">
                 
                 <label for="image">inserisci l'URL di un immagine</label>
-                <input v-model = "imageUser" type="text" name="image" id="">
+                <input v-model = "imageUser" type="text" name="image" id="imageUrl">
+                <button v-on:click ="remove()"  class="btn btn-primary"> Visualizza </button>
             
             </div>
             
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center d-none" id="viewImage">
             
                 <img v-bind:src=`${imageUser}` class="p-3" alt="">
             
